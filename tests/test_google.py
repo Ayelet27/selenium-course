@@ -1,10 +1,5 @@
-from selenium import webdriver
-
-def test_google_title():
-    driver = webdriver.Chrome()
-
-    driver.get("https://www.google.com")
-
-    assert "Google" in driver.title
-
-    driver.quit()
+driver.get("https://www.calculator.net/random-number-generator.html")
+lower_limit.send_keys("100")
+upper_limit.send_keys("500")
+generate_button = driver.find_element(By.NAME, "x")
+generate_button.click()
